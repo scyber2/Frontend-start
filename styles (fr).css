@@ -1,0 +1,242 @@
+/* Импортирование стиля из сайта Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+/* * {
+  обращение ко всем элементам
+  padding: 0;
+  margin: 0;
+} */
+
+/* Box model */
+.container {
+  padding-top: 5px;
+  max-width: 600px; /* будет адаптироваться под разные устройства*/
+  margin: auto;
+}
+
+body {
+  background-color: #f7f5f3; /* цвет заднего фона */
+  color: #0f141e; /* цвет текста */
+
+  font-size: 18px; /* Размер шрифта */
+  font-weight: normal; /* Жирность шрифта */
+  font-family: "Roboto", sans-serif; /* Меняет стиль текста */
+  /* font: normal 18px "Roboto", sans-serif; */
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  /* при наведении курсора */
+  text-decoration: underline;
+}
+
+a:active {
+  /* при удерживании курсора мышкой на ссылке */
+  color: blue;
+}
+
+.bg-yellow {
+  background-color: #fafad2;
+}
+
+.bg-green {
+  background-color: #00fa9a;
+}
+
+.bg-red {
+  background-color: #fa8072;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 200px; /* ширина */
+  height: 225px; /* высота */
+  border-radius: 28px; /* скруглённость краёв */
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4); /* Тень вокруг фото */
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info p {
+  color: #c0c0c0;
+  font-size: 17px;
+  margin: 0; /* убрать отступы */
+  font-style: italic; /* сделать текст курсивным*/
+  font-weight: bold; /* жирный шрифт */
+  text-decoration: underline; /* подчёркнутый текст */
+  text-transform: uppercase; /* Верхний регистр */
+}
+
+.info {
+  display: flex;
+}
+
+.row-info {
+  margin-left: 35px;
+}
+
+.info img {
+  margin-top: 30px;
+}
+
+.row-info h4 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* адаптирование под различные устройства */
+@media (max-width: 600px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.card li {
+  color: #c0c0c0;
+  margin-bottom: 5px;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.table th {
+  padding-bottom: 10px;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.link-list {
+  padding: 0px;
+  list-style: none;
+}
+
+.link-list li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.table td:nth-child(1),
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  /* обращение к нескольким столбцам таблицы */
+  color: #808080;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block; /* из строчного элемента в блочный */
+  font-size: 18px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 12px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid#ccc;
+  box-sizing: border-box;
+  background: transparent;
+  outline: none;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: inherit; /* наследует шрифт, указанный выше */
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.row > .form-group {
+  /* разделение нижней границы (border-bottom) */
+  width: 33.3%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  /* не будет делать отступ в конце */
+  margin-right: 0;
+}
+
+.btn {
+  background: #2ae7ad;
+  color: #0c3a6d;
+  padding: 10px;
+  cursor: pointer; /* меняет курсор при наведении */
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.75; /* при наведении курсора менятеся прозрачность кнопки */
+}
+
+/* .position {
+  position: relative; /* относительная позиция */
+/* position: fixed; будем фиксироваться на экране пользователе, даже при прокрутке сайта */
+/* height: 250px;
+  width: 250px;
+  border: 3.5px solid #000;
+  margin-top: 40px;
+}
+
+.box {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: purple;
+  right: 0;
+  bottom: 170px;
+}  */
+
+/* a:visited {
+  /* посещённые ссылки */
+/* color: gray; 
+} */
+
+/* .social {
+  background-color: green; */
+/* padding: 1px 20px; внутрениие отступы */
+/* border: 5px solid red; обозначает границу, её края */
+/* margin: 10px 0px;  внешние отступы */
+/* } */
+
+/* .box-model > div {
+  /* применяется только для дочерних элементов класса */
+/* float: left; чтобы они встали в линию */
+/* background: black;
+  height: 200px;
+  width: 25%;
+  border: 5px solid red; */
+/* box-sizing: border-box; применяется для того, чтобы выровнять в одну строку увеличишие свои размеры элементы
+} */ ;
